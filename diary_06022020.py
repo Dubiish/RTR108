@@ -164,4 +164,10 @@ TypeError: can't multiply sequence by non-int of type 'str'
 4.0
 >>> 1+2*5
 11
+>>> quotient = 7 // 3
+>>> print(quotient)
+2
+>>> remainder = 7 % 3
+>>> print(remainder)
+1
 >>> 
