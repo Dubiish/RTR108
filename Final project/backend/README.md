@@ -12,4 +12,5 @@
 - Response is sent back in JSON format
 
 ## How to start
+- Additional packages are needed like: ngspice (for linux), Python packages: "flask", "flask-cors"
 - python3 index.py
