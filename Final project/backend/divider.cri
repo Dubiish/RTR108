@@ -1,0 +1,9 @@
+voltage divider netlist
+V1 in 0 22
+R1 in out 10
+R2 out 0 15
+.control
+op
+print allv
+.endc
+.end

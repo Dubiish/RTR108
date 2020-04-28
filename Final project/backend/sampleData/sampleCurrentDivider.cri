@@ -1,0 +1,5 @@
+current divider netlist
+I1  DC 1
+R1 0 in 20k
+R2 0 in 3k
+.end

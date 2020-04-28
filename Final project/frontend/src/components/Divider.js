@@ -1,6 +1,6 @@
 import React from "react"
 import Navigation from "./Navigation"
-import { Container, Jumbotron, Row, Col, Image, Form, Button } from "react-bootstrap"
+import { Container, Jumbotron, Row, Col, Form, Button, Figure, Toast } from "react-bootstrap"
 
 class Divider extends React.Component {
 
@@ -10,11 +10,12 @@ class Divider extends React.Component {
             resistorZ1 : 0,
             resistorZ2 : 0,
             voltageIn : 0,
-            voltageOut : 0
+            voltageOut : 0,
         }
 
         this.handleSubmit = this.handleSubmit.bind(this);
     }
+
 
     handleSubmit(event) {
         event.preventDefault();
@@ -22,7 +23,7 @@ class Divider extends React.Component {
             resistorZ1 : event.target.formResistor1.value,
             resistorZ2 : event.target.formResistor2.value,
             voltageIn : event.target.formVoltage.value,
-            voltageOut : this.state.voltageOut
+            voltageOut : 0
         }, () => {
     
             let data = {
@@ -54,6 +55,7 @@ class Divider extends React.Component {
     }
 
     render() {
+
         return(
             <div>
                 <Navigation />
@@ -63,7 +65,9 @@ class Divider extends React.Component {
                 <Container>
                     <Row>
                         <Col>
-                            <Image src={require("./media/divider.png")} rounded style={{height:"25rem"}} />
+                            <Figure>
+                                <Figure.Image src={require("./media/divider.png")} style={{height:"25rem"}} />
+                            </Figure>
                         </Col>
                         <Col>
                             <Row>
@@ -90,7 +94,7 @@ class Divider extends React.Component {
                                                 <Form.Control type="number" placeholder="Enter a value..." />
                                             </Col>
                                         </Form.Group>
-                                        <Button className="float-right" variant="primary" type="submit">Simulate</Button>
+                                        <Button className="float-right" variant="danger" type="submit">Simulate</Button>
                                     </Form>
                                 </Col>
                             </Row>

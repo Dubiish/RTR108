@@ -1,5 +1,5 @@
 import React from "react"
-import { Nav, Navbar } from "react-bootstrap"
+import { Nav, Navbar, NavDropdown } from "react-bootstrap"
 
 function Navigation() {
     return(
@@ -8,9 +8,11 @@ function Navigation() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/divider">Voltage Divider</Nav.Link>
-                    <Nav.Link href="#" disabled>Circuit 2</Nav.Link>
-                    <Nav.Link href="#" disabled>Circuit 3</Nav.Link>
+                    <NavDropdown title="Circuits" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/divider">Voltage Divider</NavDropdown.Item>
+                        <NavDropdown.Item href="#" disabled>Circuit X</NavDropdown.Item>
+                        <NavDropdown.Item href="#" disabled>Circuit Y</NavDropdown.Item>
+                    </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
