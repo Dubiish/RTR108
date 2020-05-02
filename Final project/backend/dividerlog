@@ -6,6 +6,6 @@ Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
 No. of Data Rows : 1
-in = 2.200000e+01
-out = 1.320000e+01
+in = 2.000000e+00
+out = 6.666667e-01
 Note: No ".plot", ".print", or ".fourier" lines; no simulations run

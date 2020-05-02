@@ -1,7 +1,7 @@
 voltage divider netlist
-V1 in 0 22
-R1 in out 10
-R2 out 0 15
+V1 in 0 2
+R1 in out 2000
+R2 out 0 1000
 .control
 op
 print allv
