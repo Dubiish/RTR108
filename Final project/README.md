@@ -15,6 +15,9 @@
 - NGSPICE will spill some results and these are processed by server and sent in JSON format back to front-end where are displayed in results form
 
 ![Home_page](https://snipboard.io/NEI6VS.jpg "Home page")
+![voltage_divider](https://snipboard.io/9SWlvs.jpg "Voltage divider")
+![sim_input](https://snipboard.io/ENMZ4f.jpg "Simulation Input")
+![sim_output](https://snipboard.io/5oPMlX.jpg "Simulation Output")
 
 ## Summary
 
