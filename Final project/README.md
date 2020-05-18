@@ -14,7 +14,7 @@
 - After submitting data are sent to python back-end where are processed and ran by NGSPICE simulator (Native on system, no python library was used for it)
 - NGSPICE will spill some results and these are processed by server and sent in JSON format back to front-end where are displayed in results form
 
-![Home_page]("./pictures/home_page.png")
+![Home_page](Final project/pictures/home_page.PNG)
 
 ## Summary
 
